@@ -1,8 +1,7 @@
-/** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Flex, Heading } from 'theme-ui';
 import WorkCard from 'components/work-card';
-import data from 'data/assets.js'
+import data from 'data/assets.js';
 
 export default function WorkSection() {
   return (

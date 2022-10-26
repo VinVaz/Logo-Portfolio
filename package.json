@@ -11,26 +11,19 @@
   "dependencies": {
     "axios": "^0.21.4",
     "dotenv": "^8.6.0",
-    "globby": "^11.0.0",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "9.5.3",
-    "next-compose-plugins": "^2.2.1",
-    "next-optimized-images": "^2.6.2",
+    "next": "^12.2.2",
     "nodemailer": "^6.8.0",
     "rc-drawer": "^4.1.0",
-    "react": "^16.14.0",
+    "react": "^17.0.2",
     "react-autosize-textarea": "^7.1.0",
     "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "^16.14.0",
+    "react-dom": "^17.0.2",
     "react-ga": "^3.1.2",
     "react-hook-form": "^7.38.0",
     "react-icons": "^3.10.0",
     "react-multi-carousel": "^2.8.2",
     "react-stickynode": "^4.1.0",
     "theme-ui": "^0.3.1"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-next": "^11.0.1"
   }
 }

@@ -1,8 +1,7 @@
-/** @jsx jsx */
 import { jsx, Container, Flex, Button, Link } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import Logo from 'components/logo';
-import LogoDark from 'assets/logo.svg';
+import LogoDark from '../../../public/assets/logo.svg';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
@@ -13,7 +12,7 @@ export default function Header({ className }) {
         <Logo src={LogoDark} />
         <Flex as="nav" sx={styles.nav}>
           {menuItems.map((menuItem, i) => (
-            <Link href={menuItem.path} key={i} sx={styles.links} >
+            <Link href={menuItem.path} key={i} sx={styles.links}>
               {menuItem.label}
             </Link>
           ))}
@@ -41,7 +40,7 @@ const styles = {
   header: {
     color: 'text',
     fontWeight: 'body',
-    py: 4,
+    py: 6,
     width: '100%',
     position: 'absolute',
     top: 0,

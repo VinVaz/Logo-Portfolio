@@ -1,21 +1,18 @@
-/** @jsx jsx */
-import { jsx, Box, Container, Image, Text } from 'theme-ui';
+import { Box, Container, Image, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
-import FooterLogo from 'assets/logo.svg';
+import FooterLogo from 'components/logo';
 
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path="/">
-            <Image src={FooterLogo} alt="Logo"/>
-          </Link>
+          <FooterLogo />
           <Box sx={styles.footer.menus}>
             <nav>
               {data.menuItem.map((item, i) => (
-                <Link 
+                <Link
                   path={item.path}
                   key={i}
                   label={item.label}

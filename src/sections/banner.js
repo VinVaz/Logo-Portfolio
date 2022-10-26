@@ -1,13 +1,11 @@
-/** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Heading, Text, Image, Button } from 'theme-ui';
-
 
 export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
-      <Container sx={styles.banner.container}>        
-        <Heading as="h1" variant="HeroPrimary" >
+      <Container sx={styles.banner.container}>
+        <Heading as="h1" variant="HeroPrimary">
           Logos
         </Heading>
       </Container>
@@ -17,12 +15,11 @@ export default function Banner() {
 
 const styles = {
   banner: {
-    pt: ['125px', '127px', '130px', '133px', null, null, '135px', '140px'],
+    pt: ['125px', '127px', '130px', '133px', null, null, '135px', '150px'],
     pb: [2, null, 0, null, 2, 0, null, 5],
     position: 'relative',
     zIndex: 2,
     '&::before': {
-      position: 'absolute',
       content: '""',
       bottom: 6,
       left: 0,
@@ -44,7 +41,7 @@ const styles = {
       mx: 'auto',
       pb: '27px',
       textAlign: 'center',
-      borderBottom: '12px solid',     
+      borderBottom: '12px solid',
       borderColor: '#efeff2',
       mb: ['20px', null, null, null, null, 4],
     },

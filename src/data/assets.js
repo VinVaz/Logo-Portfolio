@@ -1,14 +1,13 @@
-/** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Flex, Heading } from 'theme-ui';
 import WorkCard from 'components/work-card';
 
-import Work1 from 'assets/work/work-1.png';
-import Work2 from 'assets/work/work-2.png';
-import Work3 from 'assets/work/work-3.png';
-import Work4 from 'assets/work/work-4.png';
-import Work5 from 'assets/work/work-5.png';
-import Work6 from 'assets/work/work-6.png';
+import Work1 from '../../public/assets/work/work-1.png';
+import Work2 from '../../public/assets/work/work-2.png';
+import Work3 from '../../public/assets/work/work-3.png';
+import Work4 from '../../public/assets/work/work-4.png';
+import Work5 from '../../public/assets/work/work-5.png';
+import Work6 from '../../public/assets/work/work-6.png';
 
 const data = [
   {

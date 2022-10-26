@@ -1,11 +1,13 @@
-/** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Text, Heading, Image, Flex, Box, Link } from 'theme-ui';
+import { Text, Heading, Flex, Box, Link } from 'theme-ui';
+import Image from 'next/image';
 
 export default function WorkCard({ src, altText, title }) {
   return (
     <Flex sx={styles.card}>
-      <Image src={src} alt={altText} sx={styles.memberThumb} />
+      <Box sx={styles.memberThumb}>
+        <Image src={src} alt={altText} placeholder="blur" />
+      </Box>
       <Box sx={styles.infoWrapper}>
         <Heading className="info__name" sx={styles.infoWrapper.name}>
           {title}
