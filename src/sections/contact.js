@@ -1,17 +1,11 @@
-import { jsx } from 'theme-ui';
 import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import Head from 'next/head';
 import {
   Label,
   Input,
-  Select,
   Textarea,
-  Radio,
-  Checkbox,
-  Slider,
   Box,
-  Flex,
   Button,
   Container,
   Alert,

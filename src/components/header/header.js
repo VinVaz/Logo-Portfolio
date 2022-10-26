@@ -1,8 +1,6 @@
-import { jsx, Container, Flex, Button, Link } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { Container, Flex, Button, Link } from 'theme-ui';
 import Logo from 'components/logo';
 import LogoDark from '../../../public/assets/logo.svg';
-import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
 export default function Header({ className }) {
@@ -17,24 +15,10 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <MobileDrawer />
       </Container>
     </header>
   );
 }
-
-const positionAnim = keyframes`
-  from {
-    position: fixed;
-    opacity: 1;
-  }
-
-  to {
-    position: absolute;
-    opacity: 1;
-    transition: all 0.4s ease;
-  }
-`;
 
 const styles = {
   header: {
@@ -47,17 +31,6 @@ const styles = {
     left: 0,
     backgroundColor: 'transparent',
     transition: 'all 0.4s ease',
-    animation: `${positionAnim} 0.4s ease`,
-    '&.sticky': {
-      position: 'fixed',
-      backgroundColor: 'background',
-      color: '#000000',
-      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
-      py: 3,
-      'nev > a': {
-        color: 'text',
-      },
-    },
   },
   container: {
     display: 'flex',

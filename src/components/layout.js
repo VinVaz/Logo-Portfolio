@@ -1,6 +1,5 @@
 import { jsx } from 'theme-ui';
 import React, { useState } from 'react';
-import Sticky from 'react-stickynode';
 import Header from './header/header';
 import Footer from './footer/footer';
 
@@ -17,9 +16,7 @@ export default function Layout({ children }) {
 
   return (
     <React.Fragment>
-      <Sticky innerZ={1001} top={0} onStateChange={handleStateChange}>
-        <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
-      </Sticky>
+      <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
       <main id="content" sx={{ variant: 'layout.main', my: '4rem' }}>
         {children}
       </main>
